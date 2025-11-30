@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class BinarySearchExample {
+public class LinearSearchExample {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.print("\nEnter The Size Of An Array:");
@@ -25,26 +25,16 @@ public class BinarySearchExample {
         }
         System.out.print("\nEnter The Search Number:");
         int search = scanner.nextInt();
-        int first=0;
-        int last = size-1;
-        int middle = (first+last)/2;
-        System.out.print("\n"+BS(array,search,first,last,middle,size));
+        System.out.print("\n"+LS(array,search,0));
         System.out.print("\n\n\n\t\t\t\t****Program Completed****\n\n\n");
     }
-    static boolean BS(int[] array,int search,int first,int last,int middle,int size){
-        if(first<=last){
-            if(array[middle]==search){
+    static boolean LS(int[] array,int search,int index){
+        if(array.length != index){
+            if(array[index] == search){
                 return true;
             }
-            else if(array[middle]>search){
-                last = middle-1;
-                middle = (first+last)/2;
-                return false || BS(array,search,first,last,middle,size);
-            }
             else{
-                first = middle+1;
-                middle = (first+last)/2;
-                return false || BS(array,search,first,last,middle,size);
+                return false || LS(array,search,index+1);
             }
         }
         else{
@@ -55,8 +45,6 @@ public class BinarySearchExample {
 
 
 /*
-
-OUTPUT:
 
 Enter The Size Of An Array:10
 
@@ -71,7 +59,7 @@ Enter The 8th Element:8
 Enter The 9th Element:9
 Enter The 10th Element:10
 
-Enter The Search Number:10
+Enter The Search Number:1
 
 true
 
