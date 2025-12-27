@@ -26,6 +26,8 @@ public class TablesExample {
 
 /*
 
+OUTPUT:
+
 Enter The Table:10
 
 The Table Are:

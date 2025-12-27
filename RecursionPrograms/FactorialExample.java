@@ -21,6 +21,8 @@ class FactorialExample{
 
 /*
 
+OUTPUT:
+
 Enter The Number To Find Factorial:10
 
 The Factorial Of A Given Number Are:3628800
