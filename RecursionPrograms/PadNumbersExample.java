@@ -21,3 +21,21 @@ public class PadNumbersExample{
         }
     }
 }
+
+/*
+
+OUTPUT:
+
+Enter The Numbers:26
+dp
+dq
+dr
+ep
+eq
+er
+fp
+fq
+fr
+
+
+*/
