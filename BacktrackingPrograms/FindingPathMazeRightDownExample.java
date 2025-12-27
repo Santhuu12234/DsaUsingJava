@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class FindingPathMazeExample {
+public class FindingPathMazeRightDownExample {
     public static void main(String[] args){
         findPaths("",3,3);
     } 
@@ -24,11 +24,18 @@ public class FindingPathMazeExample {
 
 OUTPUT:
 
-DDRR
-DRDR
-DRRD
-RDDR
-RDRD
-RRDD
+Down Down Right Right
+Down Right Down Right
+Down Right Right Down
+Down Right Diagonal
+Down Diagonal Right
+Right Down Down Right
+Right Down Right Down
+Right Down Diagonal
+Right Right Down Down
+Right Diagonal Down
+Diagonal Down Right
+Diagonal Right Down
+Diagonal Diagonal
 
 */
